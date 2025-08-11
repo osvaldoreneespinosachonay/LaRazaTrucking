@@ -1,51 +1,81 @@
-﻿import React from "react";
+﻿import React from 'react';
+import './Home.css';
 
-function Home() {
+const Home = () => {
     return (
-        <div className="home">
+        <div>
             <header className="hero">
-                <h1>La Raza Trucking</h1>
-                <p>Soluciones logísticas de confianza a nivel nacional</p>
-                <a href="#contact" className="btn">Solicita cotización</a>
+                <nav className="navbar">
+                    <div className="logo">La Raza Trucking</div>
+                    <ul>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div className="hero-content">
+                    <h1>Transporte de carga confiable</h1>
+                    <p>Conectamos destinos con puntualidad y seguridad</p>
+                </div>
             </header>
 
-            <section id="about" className="info">
-                <h2>Quiénes somos</h2>
-                <p>En La Raza Trucking combinamos experiencia y tecnología para ofrecer transporte terrestre de carga seguro, puntual y eficiente en toda la República Mexicana.</p>
+            <section id="mision" className="section">
+                <h2>Misión</h2>
+                <p>
+                    Ser parte importante del éxito de nuestros clientes proporcionando un servicio efectivo,
+                    confiable y humano mediante la constante mejora en nuestro proceso.
+                </p>
             </section>
 
-            <section id="services" className="services">
-                <h2>Nuestros servicios</h2>
-                <ul>
-                    <li>Transporte con cajas secas 48 y 53 pies</li>
-                    <li>Fletes especializados y des consolación en destino</li>
-                    <li>Rastreo satelital 24/7 con GPS</li>
-                    <li>Recolecciones múltiples, entregas con cita y CEDIS</li>
-                    <li>Entregas directas a tiendas y maniobras especializadas</li>
-                    <li>Estadías y soporte completo en logística</li>
-                </ul>
+            <section id="vision" className="section">
+                <h2>Visión</h2>
+                <p>
+                    Ser una empresa líder en el transporte de carga consolidada y contar con la confianza de
+                    todas las personas que requieran nuestros servicios.
+                </p>
             </section>
 
-            <section id="values" className="values">
-                <h2>Nuestra filosofía</h2>
-                <p><strong>Misión:</strong> Ser el socio estratégico en transporte de carga para nuestros clientes, con compromiso, seguridad y puntualidad.</p>
-                <p><strong>Visión:</strong> Liderar el mercado nacional con innovación, servicio al cliente y excelencia operativa.</p>
-                <p><strong>Valores:</strong> Confianza, productividad, profesionalismo, innovación, honestidad y trabajo en equipo.</p>
+            <section id="servicios" className="section">
+                <h2>Servicios</h2>
+                <p>
+                    Ofrecemos soluciones rápidas y objetivas para facilitarle movimientos y procesos dentro
+                    de su empresa. Carga desde la Ciudad de México a toda la República Mexicana.
+                </p>
             </section>
 
-            <section id="contact" className="contact">
-                <h2>Contáctanos</h2>
-                <p>Tel: 55‑1234‑5678 | Email: contacto@lara zatrucking.com.mx</p>
-                <form>
+            <section id="quienes-somos" className="section">
+                <h2>Quiénes Somos</h2>
+                <p>
+                    Somos una empresa familiar dedicada a la transportación de carga general ofreciendo
+                    servicios a empresas con necesidades de confiabilidad, calidad y buen servicio.
+                </p>
+            </section>
+
+            <section id="contacto" className="section contacto">
+                <h2>Contacto</h2>
+                <form className="contact-form">
                     <input type="text" placeholder="Nombre" required />
-                    <input type="tel" placeholder="Teléfono" required />
                     <input type="email" placeholder="Correo electrónico" required />
-                    <textarea placeholder="Mensaje" required />
+                    <textarea placeholder="Mensaje" rows="4" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
+
+                <div className="contact-info">
+                    <h3>Información de contacto</h3>
+                    <p><strong>Nombre:</strong> Dennis Espinoza Servin</p>
+                    <p><strong>Teléfonos:</strong> 5559597448 / 5516552138</p>
+                    <p><strong>Correo:</strong> espinoza_trans@outlook.com</p>
+                    <p><strong>Dirección:</strong> Lago de Chapultepec No. 223, Col. Agua Azul, Cd. Nezahualcóyotl, C.P. 57500</p>
+                </div>
             </section>
+
+            <footer>
+                © {new Date().getFullYear()} La Raza Trucking. Todos los derechos reservados.
+            </footer>
         </div>
     );
-}
+};
 
 export default Home;

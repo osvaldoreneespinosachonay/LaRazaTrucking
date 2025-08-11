@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Hero / Encabezado */
+.hero {
+    background-color: #004b8d;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .navbar li a:hover {
+        text-decoration: underline;
+    }
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Secciones */
+.section {
+    padding: 3rem 2rem;
+    background-color: white;
+    margin: 1rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center; /* texto centrado */
+}
+
+    .section h2 {
+        color: #004b8d;
+        margin-bottom: 1rem;
+    }
+
+    .section p {
+        margin-bottom: 1rem;
+    }
+
+/* Contacto */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; /* centra contenido */
+    text-align: center; /* centra texto */
+}
+
+.contact-form,
+.contact-info {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        background-color: #004b8d;
+        color: white;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .contact-form button:hover {
+            background-color: #00325f;
+        }
+
+.contact-info {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+    .contact-info h3 {
+        margin-top: 0;
+        color: #004b8d;
+    }
+
+    .contact-info p {
+        margin: 0.5rem 0;
+    }
+
+/* Footer */
+footer {
+    background-color: #004b8d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
