@@ -7,18 +7,48 @@ body {
 
 /* Hero / Encabezado */
 .hero {
-    background-color: #004b8d;
+    background-image: url('/images/fondo-header.jpg'); /* Ajusta si cambió el nombre */
+    background-size: cover; /* Llena el contenedor sin distorsión */
+    background-position: center center;
+    background-repeat: no-repeat;
     color: white;
-    padding: 2rem;
     text-align: center;
+    position: relative;
+    height: 50vh; /* Aproximadamente 50% del alto de pantalla */
+    min-height: 350px; /* Altura mínima para pantallas chicas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad si hace falta */
+        z-index: 0;
+    }
+
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.4); /* fondo semi-transparente */
+    z-index: 2;
 }
 
 .logo {
@@ -61,7 +91,7 @@ body {
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    text-align: center; /* texto centrado */
+    text-align: center;
 }
 
     .section h2 {
@@ -78,8 +108,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center; /* centra contenido */
-    text-align: center; /* centra texto */
+    align-items: center;
+    text-align: center;
 }
 
 .contact-form,
