@@ -165,7 +165,7 @@ body {
     }
 
 #servicios {
-    background-image: url('/images/trailer_laraza_blanco.jpg');
+    background-image: url('/images/trailer_laraza_vertical.jpg');
     background-size: contain; /* Muestra toda la imagen */
     background-position: center;
     background-repeat: no-repeat;
@@ -325,4 +325,56 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+.main-container {
+    max-width: 1200px; /* Controla el ancho máximo del contenido */
+    margin: 0 auto; /* ? Centra horizontalmente */
+    padding: 0 1rem; /* Espaciado lateral */
+}
+/* Estilos para subtítulos en las secciones */
+.section h3 {
+    font-size: 1.4rem;
+    color: #ffffff; /* O blanco si la sección tiene fondo oscuro */
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Listas dentro de secciones (Servicios) */
+.section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+}
+
+    .section ul li {
+        margin-bottom: 0.6rem;
+        color: #f0f0f0; /* Ajusta según fondo (blanco si fondo claro, claro si fondo oscuro) */
+        line-height: 1.5;
+    }
+#servicios::before,
+#mision::before,
+#vision::before,
+#quienes-somos::before,
+#contacto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* <-- Aumenta la opacidad */
+    z-index: 1;
+}
+#servicios *,
+#mision *,
+#vision *,
+#quienes-somos *,
+#contacto * {
+    position: relative;
+    z-index: 2;
 }
