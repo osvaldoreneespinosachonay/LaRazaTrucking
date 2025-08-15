@@ -1,2 +1,7 @@
 {
-}
+  {
+    "app_build_command": "npm run build",
+    "app_location": "/",
+    "output_location": "dist",
+    "node_version": "22.2.0"
+  }

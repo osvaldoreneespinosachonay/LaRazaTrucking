@@ -7,15 +7,15 @@ body {
 
 /* Hero / Encabezado */
 .hero {
-    background-image: url('/images/fondo-header.jpg'); /* Ajusta si cambió el nombre */
-    background-size: cover; /* Llena el contenedor sin distorsión */
+    background-image: url('/images/fondo-header.jpg');
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
     position: relative;
-    height: 50vh; /* Aproximadamente 50% del alto de pantalla */
-    min-height: 350px; /* Altura mínima para pantallas chicas */
+    height: 50vh;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad si hace falta */
+        background-color: rgba(0, 0, 0, 0.4);
         z-index: 0;
     }
 
@@ -47,7 +47,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.4); /* fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
 }
 
@@ -95,12 +95,159 @@ body {
 }
 
     .section h2 {
-        color: #004b8d;
+        color: white;
+        font-weight: bold;
         margin-bottom: 1rem;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Mejora la visibilidad sobre fondos claros u oscuros */
     }
 
     .section p {
         margin-bottom: 1rem;
+    }
+
+/* ? Sección Misión con fondo */
+#mision {
+    background-image: url('/images/trailer_laraza.jpg');
+    background-size: contain; /* Muestra toda la imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000; /* Fondo detrás si sobran márgenes */
+    color: white;
+    position: relative;
+    height: auto;
+    padding: 5rem 2rem; /* Espaciado para que el contenido no quede apretado */
+    text-align: center;
+}
+
+    #mision::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Oscurece fondo para legibilidad */
+        z-index: 1;
+    }
+
+    #mision * {
+        position: relative;
+        z-index: 2;
+    }
+
+#vision {
+    background-image: url('/images/trailer_laraza_azul.jpg');
+    background-size: contain; /* Muestra toda la imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000; /* Fondo detrás si sobran márgenes */
+    color: white;
+    position: relative;
+    height: auto;
+    padding: 5rem 2rem; /* Espaciado para que el contenido no quede apretado */
+    text-align: center;
+}
+
+    #vision::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Oscurece fondo para legibilidad */
+        z-index: 1;
+    }
+
+    #vision * {
+        position: relative;
+        z-index: 2;
+    }
+
+#servicios {
+    background-image: url('/images/trailer_laraza_blanco.jpg');
+    background-size: contain; /* Muestra toda la imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000; /* Fondo detrás si sobran márgenes */
+    color: white;
+    position: relative;
+    height: auto;
+    padding: 5rem 2rem; /* Espaciado para que el contenido no quede apretado */
+    text-align: center;
+}
+
+    #servicios::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Oscurece fondo para legibilidad */
+        z-index: 1;
+    }
+
+    #servicios * {
+        position: relative;
+        z-index: 2;
+    }
+
+#quienes-somos {
+    background-image: url('/images/trailer_laraza_amarillo.jpg');
+    background-size: contain; /* Muestra toda la imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000; /* Fondo detrás si sobran márgenes */
+    color: white;
+    position: relative;
+    height: auto;
+    padding: 5rem 2rem; /* Espaciado para que el contenido no quede apretado */
+    text-align: center;
+}
+
+    #quienes-somos::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Oscurece fondo para legibilidad */
+        z-index: 1;
+    }
+
+    #quienes-somos * {
+        position: relative;
+        z-index: 2;
+    }
+
+#contacto {
+    background-image: url('/images/trailer_laraza_luces.jpg');
+    background-size: contain; /* Muestra toda la imagen sin recorte */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000; /* Color de fondo por si sobran márgenes */
+    color: white;
+    position: relative;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+    #contacto::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); /* Oscurece el fondo para mayor legibilidad */
+        z-index: 1;
+    }
+
+    #contacto * {
+        position: relative;
+        z-index: 2;
     }
 
 /* Contacto */
@@ -151,15 +298,24 @@ body {
     background-color: #f0f0f0;
     padding: 1.5rem;
     border-radius: 6px;
+    color: #222; /* ? Texto visible en fondo claro */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* (Opcional) Agrega sombra para destacarlo más */
 }
 
     .contact-info h3 {
         margin-top: 0;
         color: #004b8d;
+        font-weight: bold;
     }
 
     .contact-info p {
         margin: 0.5rem 0;
+        color: #222; /* ? Asegura legibilidad */
+    }
+
+    .contact-info strong {
+        font-weight: bold;
+        color: #000; /* ? También asegura que el texto en <strong> sea visible */
     }
 
 /* Footer */

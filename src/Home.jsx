@@ -55,10 +55,15 @@ const Home = () => {
 
             <section id="contacto" className="section contacto">
                 <h2>Contacto</h2>
-                <form className="contact-form">
-                    <input type="text" placeholder="Nombre" required />
-                    <input type="email" placeholder="Correo electrónico" required />
-                    <textarea placeholder="Mensaje" rows="4" required></textarea>
+                <form
+                    className="contact-form"
+                    action="https://formspree.io/f/mldlvwwq"  // Reemplaza con tu endpoint real
+                    method="POST"
+                    acceptCharset="UTF-8"
+                >
+                    <input type="text" name="name" placeholder="Nombre" required />
+                    <input type="email" name="email" placeholder="Correo electrónico" required />
+                    <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
 
