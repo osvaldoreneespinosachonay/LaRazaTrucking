@@ -103,7 +103,7 @@ const Home = () => {
                             <h3>Información de contacto</h3>
                             {/* <p><strong>Nombre:</strong> Dennis Espinoza Servin</p> */}
                             <p><strong>Teléfonos:</strong> 55 59 59 74 48 / 55 16 55 21 38</p>
-                            <p><strong>Correo:</strong> larazatrukingtranspor@outlook.com  </p>
+                            <p><strong>Correo:</strong> larazatrukingtransport@outlook.com  </p>
                             <p><strong>Ubicación:</strong>  Cd. Nezahualcóyotl, Estado de México</p>
                         </div>
                     </section>
