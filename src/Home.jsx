@@ -3,6 +3,8 @@ import './Home.css';
 
 const Home = () => {
     return (
+        <body>
+        
         <div className="main-container">
             {
                 <div>
@@ -75,7 +77,6 @@ const Home = () => {
                         </p>
                     </section>
 
-
                     <section id="quienes-somos" className="section">
                         <h2>Quiénes Somos</h2>
                         <p>
@@ -100,10 +101,10 @@ const Home = () => {
 
                         <div className="contact-info">
                             <h3>Información de contacto</h3>
-                            <p><strong>Nombre:</strong> Dennis Espinoza Servin</p>
+                            {/* <p><strong>Nombre:</strong> Dennis Espinoza Servin</p> */}
                             <p><strong>Teléfonos:</strong> 55 59 59 74 48 / 55 16 55 21 38</p>
-                            <p><strong>Correo:</strong> espinoza_trans@outlook.com</p>
-                            <p><strong>Dirección:</strong> Lago de Chapultepec No. 223, Col. Agua Azul, Cd. Nezahualcóyotl, C.P. 57500</p>
+                            <p><strong>Correo:</strong> larazatrukingtranspor@outlook.com  </p>
+                            <p><strong>Ubicación:</strong>  Cd. Nezahualcóyotl, Estado de México</p>
                         </div>
                     </section>
 
@@ -112,7 +113,8 @@ const Home = () => {
                     </footer>
                 </div>
             }
-        </div>
+            </div>
+        </body>
     );
 };
 

@@ -1,12 +1,17 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    /*background-color: white;  */
     color: #333;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/backround.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
-
-/* Hero / Encabezado */
-.hero {
+    /* Hero / Encabezado */
+    .hero {
     background-image: url('/images/fondo-header.jpg');
     background-size: cover;
     background-position: center center;
@@ -82,7 +87,6 @@ body {
 .hero-content p {
     font-size: 1.2rem;
 }
-
 /* Secciones */
 .section {
     padding: 3rem 2rem;
@@ -104,11 +108,10 @@ body {
     .section p {
         margin-bottom: 1rem;
     }
-
 /* ? Sección Misión con fondo */
 #mision {
-    background-image: url('/images/trailer_laraza.jpg');
-    background-size: contain; /* Muestra toda la imagen */
+    background-image: url('/images/trailer_laraza.jpg'); /*background-size: contain; */ /* Muestra toda la imagen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000; /* Fondo detrás si sobran márgenes */
@@ -136,8 +139,8 @@ body {
     }
 
 #vision {
-    background-image: url('/images/trailer_laraza_azul.jpg');
-    background-size: contain; /* Muestra toda la imagen */
+    background-image: url('/images/trailer_laraza_azul.jpg'); /*background-size: contain; */ /* Muestra toda la imagen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000; /* Fondo detrás si sobran márgenes */
@@ -165,8 +168,8 @@ body {
     }
 
 #servicios {
-    background-image: url('/images/trailer_laraza_vertical.jpg');
-    background-size: contain; /* Muestra toda la imagen */
+    background-image: url('/images/trailer_laraza_vertical.jpg'); /*background-size: contain; */ /* Muestra toda la imagen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000; /* Fondo detrás si sobran márgenes */
@@ -194,8 +197,8 @@ body {
     }
 
 #quienes-somos {
-    background-image: url('/images/trailer_laraza_amarillo.jpg');
-    background-size: contain; /* Muestra toda la imagen */
+    background-image: url('/images/trailer_laraza_amarillo.jpg'); /*background-size: contain;*/ /* Muestra toda la imagen */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000; /* Fondo detrás si sobran márgenes */
@@ -223,8 +226,8 @@ body {
     }
 
 #contacto {
-    background-image: url('/images/trailer_laraza_luces.jpg');
-    background-size: contain; /* Muestra toda la imagen sin recorte */
+    background-image: url('/images/trailer_laraza_luces.jpg'); /*background-size: contain;*/ /* Muestra toda la imagen sin recorte */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000; /* Color de fondo por si sobran márgenes */
@@ -249,8 +252,8 @@ body {
         position: relative;
         z-index: 2;
     }
-
 /* Contacto */
+
 .contacto {
     display: flex;
     flex-direction: column;
@@ -259,8 +262,7 @@ body {
     text-align: center;
 }
 
-.contact-form,
-.contact-info {
+.contact-form, .contact-info {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
@@ -273,8 +275,7 @@ body {
     gap: 1rem;
 }
 
-    .contact-form input,
-    .contact-form textarea {
+    .contact-form input, .contact-form textarea {
         padding: 0.8rem;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -317,8 +318,8 @@ body {
         font-weight: bold;
         color: #000; /* ? También asegura que el texto en <strong> sea visible */
     }
-
 /* Footer */
+
 footer {
     background-color: #004b8d;
     color: white;
@@ -333,6 +334,7 @@ footer {
     padding: 0 1rem; /* Espaciado lateral */
 }
 /* Estilos para subtítulos en las secciones */
+
 .section h3 {
     font-size: 1.4rem;
     color: #ffffff; /* O blanco si la sección tiene fondo oscuro */
@@ -341,8 +343,8 @@ footer {
     margin-bottom: 0.8rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-
 /* Listas dentro de secciones (Servicios) */
+
 .section ul {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -356,11 +358,8 @@ footer {
         color: #f0f0f0; /* Ajusta según fondo (blanco si fondo claro, claro si fondo oscuro) */
         line-height: 1.5;
     }
-#servicios::before,
-#mision::before,
-#vision::before,
-#quienes-somos::before,
-#contacto::before {
+
+#servicios::before, #mision::before, #vision::before, #quienes-somos::before, #contacto::before {
     content: "";
     position: absolute;
     top: 0;
@@ -370,11 +369,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); /* <-- Aumenta la opacidad */
     z-index: 1;
 }
-#servicios *,
-#mision *,
-#vision *,
-#quienes-somos *,
-#contacto * {
+
+#servicios *, #mision *, #vision *, #quienes-somos *, #contacto * {
     position: relative;
     z-index: 2;
 }
