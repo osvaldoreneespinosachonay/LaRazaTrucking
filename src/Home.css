@@ -374,3 +374,46 @@ footer {
     position: relative;
     z-index: 2;
 }
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    filter: invert(1); /* Para ícono blanco */
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* Hace el ícono blanco */
+}

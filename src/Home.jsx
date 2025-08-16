@@ -96,6 +96,29 @@ const Home = () => {
                         <button type="submit">Enviar</button>
                     </form>
 
+                    <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+                        <p><strong>Escríbenos por WhatsApp:</strong></p>
+                        <a
+                            href="https://wa.me/5215559597448" // Reemplaza con el número real si deseas
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                display: 'inline-block',
+                                backgroundColor: '#25D366',
+                                color: 'white',
+                                padding: '0.8rem 1.5rem',
+                                borderRadius: '5px',
+                                textDecoration: 'none',
+                                fontWeight: 'bold',
+                                fontSize: '1rem',
+                                marginTop: '0.5rem'
+                            }}
+                        >
+                            WhatsApp
+                        </a>
+                    </div>
+
+
                     <div className="contact-info">
                         <h3>Información de contacto</h3>
                         <p><strong>Teléfonos:</strong> 55 59 59 74 48 / 55 16 55 21 38</p>
